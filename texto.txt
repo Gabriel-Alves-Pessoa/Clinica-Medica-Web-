@@ -1,0 +1,7 @@
+pagina adm{
+    ver todos os clientes,
+    pesquisar um cliente(JS),
+    cadastrar um cliente,
+    atualizar um cliente,
+    deletar um cliente
+}

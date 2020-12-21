@@ -1,0 +1,358 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif;
+  box-sizing: border-box;
+}
+
+.services-section{
+  background: url('../img/laboratory.jpg');
+  background-size: cover;
+  padding: 60px 0;
+}
+.inner-width{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.section-title{
+  text-align: center;
+  color: #ddd;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.border{
+  width: 160px;
+  height: 2px;
+  background: #FFD42A;
+  margin: 40px auto;
+}
+.services-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-box{
+  min-width: 33.33%;
+  max-width: 33.33%;
+  padding: 10px;
+  text-align: center;
+  color: #ddd;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.service-box a{
+  text-decoration: none;
+  color: #ddd;
+}
+
+.service-box:hover img{
+  opacity: 0.5;
+}
+
+.service-box:hover .service-title{
+  opacity: 0.5;
+}
+
+.service-title{
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.service-desc{
+  font-size: 14px;
+}
+
+@media screen and (max-width:960px) {
+  .service-box{
+    min-width: 45%;
+    max-width: 45%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .service-box{
+    min-width: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .service-box{
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
+
+.ver_consultas-section{
+  background-color: #111;
+  width: 100%;
+  height: 500px;
+}
+
+.ver_consultas-section .consultas-tabela{
+  position: absolute;
+  width: 50%;
+  height: 450px;
+}
+.ver_consultas-section .consultas-img{
+  position: absolute;
+  width: 50%;
+  height: 450px;
+  left: 50%;
+}
+
+.consultas-img img{
+  position: absolute;
+  left: 50%;
+  margin-top: 225px;
+  transform: translate(-50%,-50%);
+  width: 400px;
+}
+
+.consultas-tabela h2{
+  text-align: center;
+  color: #FFD42A;
+  margin-top: 50px;
+}
+
+.consultas-tabela table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  margin-top: 60px;
+  margin-left: 50%;
+  width: 500px;
+  transform: translateX(-50%);
+}
+
+.consultas-tabela table td, .consultas-tabela table th {
+  padding: 8px;
+}
+
+.consultas-tabela table tr{
+  background-color: #ccc;
+}
+
+.consultas-tabela table tr:nth-child(even){background-color: #f2f2f2;}
+
+.consultas-tabela table tr:hover {background-color: #ddd;}
+
+.consultas-tabela table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #FFD42A;
+  color: #111;
+}
+
+
+.cancelar-section{
+  background-color: #aaa;
+  width: 100%;
+  height: 500px;
+}
+
+.cancelar-section .cancelar-tabela{
+  position: absolute;
+  width: 50%;
+  height: 450px;
+  left: 50%;
+}
+.cancelar-section .cancelar-img{
+  position: absolute;
+  width: 50%;
+  height: 450px;
+}
+
+.cancelar-img img{
+  position: absolute;
+  left: 50%;
+  margin-top: 225px;
+  transform: translate(-50%,-50%);
+  width: 400px;
+}
+
+.cancelar-tabela h2{
+  text-align: center;
+  color: #111;
+  margin-top: 50px;
+}
+
+.cancelar-tabela table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  margin-top: 60px;
+  margin-left: 50%;
+  width: 500px;
+  transform: translateX(-50%);
+}
+
+.cancelar-tabela table td, .cancelar-tabela table th {
+  padding: 8px;
+}
+
+.cancelar-tabela table tr{
+  background-color: #ccc;
+}
+
+.cancelar-tabela table tr:nth-child(even){background-color: #f2f2f2;}
+
+.cancelar-tabela table tr:hover {background-color: #ddd;}
+
+.cancelar-tabela table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #FFD42A;
+  color: #111;
+}
+
+.cancelar-tabela table input[type=submit]{
+  border: none;
+  cursor: pointer;
+  width: 90px;
+  height: 25px;
+  background-color: red;
+  color: #fff;
+  font-weight: bold;
+}
+
+.cancelar-tabela table input[type=submit]:hover{
+  opacity: 0.7;
+}
+
+
+
+.marcar_consultas-section{
+  background-color: #111;
+  width: 100%;
+  height: 500px;
+}
+
+.marcar_consultas-section .marcar-form{
+  position: absolute;
+  width: 50%;
+  height: 450px;
+}
+.marcar_consultas-section .marcar-img{
+  position: absolute;
+  width: 50%;
+  height: 450px;
+  left: 50%;
+}
+
+.marcar-img img{
+  position: absolute;
+  left: 50%;
+  margin-top: 250px;
+  transform: translate(-50%,-50%);
+  width: 400px;
+}
+
+.marcar-form h2{
+  text-align: center;
+  color: #FFD42A;
+  margin-top: 50px;
+}
+
+.marcar-form .marcar-label{
+  color: #fff;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.marcar-form input[type=submit] {
+  background-color: #FFD42A;
+  border: none;
+  font-size: 15px;
+  border-radius: 4px;
+  font-weight: bold;
+  color: white;
+  padding: 15px 20px;
+  text-decoration: none;
+  margin: 4px 2px;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+.marcar-form input[type=submit]:hover{
+  opacity: 0.7;
+}
+
+.marcar-form input[type=text]{
+  background-color: #f1f1f1;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 10px;
+} 
+.marcar-form input[type=date]{
+  background-color: #f1f1f1;
+  padding: 16px 29px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+
+.marcar-form select {
+  width: 200px;
+  padding: 16px 19px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+  margin-top: 10px;
+}
+
+
+
+.infor-section{
+  background-color: #aaa;
+  width: 100%;
+  height: 500px;
+}
+
+.infor-section .infor-dados{
+  position: absolute;
+  width: 50%;
+  height: 450px;
+  left: 50%; 
+}
+.infor-section .infor-img{
+  position: absolute;
+  width: 50%;
+  height: 450px;
+}
+
+.infor-img img{
+  position: absolute;
+  left: 50%;
+  margin-top: 250px;
+  transform: translate(-50%,-50%);
+  width: 400px;
+}
+
+.infor-dados h2{
+  text-align: center;
+  color: #111;
+  margin-top: 50px;
+}
+
+.infor-dados p{
+  margin-top: 65px;
+  width: 300px;
+  font-weight: bold;
+  color: #111;
+}
+
+.copyright{
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}

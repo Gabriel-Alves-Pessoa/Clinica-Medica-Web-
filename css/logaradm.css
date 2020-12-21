@@ -1,0 +1,140 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: url('../img/bg_cadastro.jpg');
+	background-size: cover;
+	font-family: sans-serif;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.loginBox{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 450px;
+	height: 400px;
+	padding: 80px 40px;
+	box-sizing: border-box;
+	border-radius: 30px;
+	background: rgba(0,0,0,.5);
+}
+.user{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+	position: absolute;
+    margin-left: 30%;
+	margin-top: -130px;
+}
+.user:hover{
+	animation: girar 2s linear infinite;
+}
+@keyframes girar{
+  0%{
+    transform: rotate(0);
+  }
+  25%{
+	  transform: rotate(45deg);
+  }
+  50%{
+    transform: rotate(0);
+  }
+  75%{
+	transform: rotate(-45deg);
+  }
+}
+
+h2{
+	margin: 0;
+	padding: 0 0 20px;
+	color: #FFD42A;
+	text-align: center;
+}
+.loginBox p{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	color: #fff;
+}
+.loginBox input{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.loginBox input[type="text"],
+.loginBox input[type="password"],
+.loginBox input[type="email"]{
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+}
+::placeholder{
+	color: rgba(255,255,255,.5);
+}
+.loginBox input[type="submit"]{
+	border: none;
+	outline: none;
+	height: 40px;
+	color: #000;
+	font-size: 16px;
+	background: #FFD42A;
+	cursor: pointer;
+	border-radius: 20px;
+}
+.loginBox input[type="submit"]:hover{
+	background: #FFD42A;
+	opacity: 0.8;
+	font-weight: bold;
+}
+.loginBox .link{
+	width: 100%;
+	margin-left: 50%;
+	transform: translate(-50%,0%);
+	text-align: center;
+}
+.loginBox .link a{
+    color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+}
+.loginBox .link a:hover{
+	border-bottom: 2px solid #FFD42A;
+}
+#olho{
+    position: absolute;
+    /* background-color: red; */
+    background-image: url('../img/olho_branco.svg');
+	width: 30px;
+    height: 30px;
+    margin-left: 320px;
+    margin-top: -65px;
+    cursor: pointer;
+	z-index: 100;
+}
+#olho.mostrar{
+    background-image: url('../img/olho_amarelo.svg');
+}
+/* ERROS */
+.erros{
+	width: 100%;
+	background: rgba(255,255,255,.5);
+	margin-left: 50%;
+	margin-top: 10px;
+	transform: translate(-50%,0%);
+	border-radius: 20px;
+	border: none;
+}
+.erros li{
+	list-style: none;
+	text-align: center;
+	color: red;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+}
